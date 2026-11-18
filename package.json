@@ -1,12 +1,19 @@
 {
   "name": "diagrams",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyper-code-harness/diagrams"
+  },
   "procs": {
     "src": "src",
     "label": "Diagrams",
     "icon": "ph-flow-arrow",
     "optional": true,
     "description": "Compose typed interaction scenarios with synchronous helpers and render sequence diagrams as standalone SVG."
+  },
+  "scripts": {
+    "test": "bun ${HYPER_CODE:-../hyper-code}/script/plugin-test.ts ."
   }
 }
